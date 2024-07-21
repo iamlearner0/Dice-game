@@ -39,21 +39,9 @@ const start = () => {
 };
 
 start();
-resetAll();
 
 function resetAll() {
-  scores = [0, 0];
-  currentScore = 0;
-  activePlayer = 0;
-
-  score0.textContent = 0;
-  score1.textContent = 0;
-
-  diceElement.classList.add("hidden");
-  player0.classList.remove("player--winner");
-  player1.classList.remove("player--winner");
-  player0.classList.add("player--active");
-  player1.classList.remove("player--active");
+  start();
 
   total.forEach((score) => {
     score.innerText = 0;
