@@ -21,24 +21,24 @@ function eventListener() {
 
 let scores, currentScore, activePlayer, playing;
 
-// const start = () => {
-//   scores = [0, 0];
-//   currentScore = 0;
-//   activePlayer = 0;
+const start = () => {
+  scores = [0, 0];
+  currentScore = 0;
+  activePlayer = 0;
 
-//   score0.textContent = 0;
-//   score1.textContent = 0;
+  score0.textContent = 0;
+  score1.textContent = 0;
 
-//   playing = true;
+  playing = true;
 
-//   diceElement.classList.add("hidden");
-//   player0.classList.remove("player--winner");
-//   player1.classList.remove("player--winner");
-//   player0.classList.add("player--active");
-//   player1.classList.remove("player--active");
-// };
+  diceElement.classList.add("hidden");
+  player0.classList.remove("player--winner");
+  player1.classList.remove("player--winner");
+  player0.classList.add("player--active");
+  player1.classList.remove("player--active");
+};
 
-// start();
+start();
 resetAll();
 
 function resetAll() {
